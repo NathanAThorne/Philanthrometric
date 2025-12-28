@@ -1,15 +1,122 @@
-﻿HTML
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Free Cloudflare Site</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>ProDigital Marketing - Elevate Your Brand</title>
+    <meta name="description" content="Expert digital marketing services: SEO, Social Media, Content, and more." />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Optional: Google Fonts for modern typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello from Cloudflare Pages! 🎉</h1>
-    <p>This site is hosted completely for free.</p>
-    <button onclick="alert('It works!')">Click me</button>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="logo">
+                <img src="logo.png" alt="ProDigital Logo" width="40" height="40" />
+                <span>ProDigital</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
+                <span class="sun">☀️</span>
+                <span class="moon">🌙</span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1>Elevate Your Brand with Expert Digital Marketing</h1>
+            <p>Drive growth, engage audiences, and boost ROI with our tailored services.</p>
+            <a href="#contact" class="btn primary">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>SEO Optimization</h3>
+                    <p>Rank higher on search engines and attract organic traffic.</p>
+                </div>
+                <div class="card">
+                    <h3>Social Media Management</h3>
+                    <p>Build and engage your community on Instagram, LinkedIn, X, and more.</p>
+                </div>
+                <div class="card">
+                    <h3>Content Creation</h3>
+                    <p>High-quality blogs, videos, and graphics that resonate with your audience.</p>
+                </div>
+                <div class="card">
+                    <h3>Email Marketing</h3>
+                    <p>Nurture leads and drive conversions with targeted campaigns.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="grid">
+                <div class="card testimonial">
+                    <p class="quote">"ProDigital transformed our online presence—traffic up 300%!"</p>
+                    <p class="author">- Alex Johnson</p>
+                </div>
+                <div class="card testimonial">
+                    <p class="quote">"Their social media strategies delivered real engagement and sales."</p>
+                    <p class="author">- Sarah Lee</p>
+                </div>
+                <div class="card testimonial">
+                    <p class="quote">"Expert SEO that put us on page 1. Highly recommend!"</p>
+                    <p class="author">- Mike Torres</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form id="contact-form" class="form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required />
+                    <span class="error" id="name-error"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Your Email" required />
+                    <span class="error" id="email-error"></span>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                    <span class="error" id="message-error"></span>
+                </div>
+                <button type="submit" class="btn primary">Send Message</button>
+                <p id="form-success" class="success hidden">Message sent! We'll get back to you soon.</p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <img src="logo.png" alt="ProDigital Logo" width="30" height="30" />
+            <p>&copy; 2025 ProDigital Marketing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
