@@ -1,0 +1,25 @@
+﻿CSSbody {
+    font-family: system-ui, sans-serif;
+    text-align: center;
+    padding: 4rem;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: white;
+    color: #2575fc;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+    button:hover {
+        transform: scale(1.05);
+    }
